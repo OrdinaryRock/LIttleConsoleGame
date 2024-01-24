@@ -11,20 +11,31 @@ namespace Game
         static string[][] map = new string[mapHeight][];
         public class Player
         {
-            public static int x = 3;
-            public static int y = 7;
+            private static int x = 3;
+            private static int y = 7;
+
+            public static int GetX() { return x; }
+            public static int GetY() { return y; }
+            public static void SetX(int value) { x = value; }
+            public static void SetY(int value) { y = value; }
+
+            public static bool TryMovement(int xDistance, int yDistance)
+            {
+                int xTo = x + xDistance;
+                int yTo = y + yDistance;
+                if(Program.map[yTo][xTo] != "#")
+                {
+                    x += xDistance;
+                    y += yDistance;
+                }
+                return true;
+            }
         }
 
         static void Main(string[] args)
         {
             InitMap();
             DoTurn();
-
-            
-
-            
-
-            
         }
         static void InitMap()
         {
@@ -50,7 +61,7 @@ namespace Game
                 for (int j = 0; j < mapWidth; j++)
                 {
                     string tile = map[i][j];
-                    if (Player.x == j && Player.y == i) Console.Write("@");
+                    if (Player.GetX() == j && Player.GetY() == i) Console.Write("@");
                     else Console.Write(tile);
                 }
                 Console.WriteLine();
@@ -76,16 +87,16 @@ namespace Game
                     return;
                     break;
                 case "up":
-                    Player.y--;
+                    Player.TryMovement(0, -1);
                     break;
                 case "down":
-                    Player.y++;
+                    Player.TryMovement(0, 1);
                     break;
                 case "left":
-                    Player.x--;
+                    Player.TryMovement(-1, 0);
                     break;
                 case "right":
-                    Player.x++;
+                    Player.TryMovement(1, 0);
                     break;
             }
             DoTurn();
