@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mason\\source\\repos\\Game\\Game.csproj": {}
+    "C:\\Users\\Mason\\source\\repos\\LIttleConsoleGame\\Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mason\\source\\repos\\Game\\Game.csproj": {
+    "C:\\Users\\Mason\\source\\repos\\LIttleConsoleGame\\Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mason\\source\\repos\\Game\\Game.csproj",
+        "projectUniqueName": "C:\\Users\\Mason\\source\\repos\\LIttleConsoleGame\\Game.csproj",
         "projectName": "Game",
-        "projectPath": "C:\\Users\\Mason\\source\\repos\\Game\\Game.csproj",
+        "projectPath": "C:\\Users\\Mason\\source\\repos\\LIttleConsoleGame\\Game.csproj",
         "packagesPath": "C:\\Users\\Mason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mason\\source\\repos\\Game\\obj\\",
+        "outputPath": "C:\\Users\\Mason\\source\\repos\\LIttleConsoleGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mason\\AppData\\Roaming\\NuGet\\NuGet.Config",
