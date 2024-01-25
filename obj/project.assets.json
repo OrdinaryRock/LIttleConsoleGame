@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mason\\.nuget\\packages\\": {}
+    "C:\\Users\\Mason\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Random Repos\\LIttleConsoleGame\\Game.csproj",
+      "projectUniqueName": "C:\\Users\\Mason\\source\\repos\\LIttleConsoleGame\\Game.csproj",
       "projectName": "Game",
-      "projectPath": "C:\\Random Repos\\LIttleConsoleGame\\Game.csproj",
-      "packagesPath": "C:\\Users\\mason\\.nuget\\packages\\",
-      "outputPath": "C:\\Random Repos\\LIttleConsoleGame\\obj\\",
+      "projectPath": "C:\\Users\\Mason\\source\\repos\\LIttleConsoleGame\\Game.csproj",
+      "packagesPath": "C:\\Users\\Mason\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mason\\source\\repos\\LIttleConsoleGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mason\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

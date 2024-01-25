@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 
@@ -27,8 +28,9 @@ namespace Game
                 {
                     x += xDistance;
                     y += yDistance;
+                    return true;
                 }
-                return true;
+                return false;
             }
         }
 
@@ -49,7 +51,7 @@ namespace Game
                 {
                     if (i == 0 || i == mapHeight - 1) map[i][j] = "#";
                     else if (j == 0 || j == mapWidth - 1) map[i][j] = "#";
-                    else map[i][j] = " ";
+                    else map[i][j] = "-";
                 }
             }
         }
@@ -63,6 +65,7 @@ namespace Game
                     string tile = map[i][j];
                     if (Player.GetX() == j && Player.GetY() == i) Console.Write("@");
                     else Console.Write(tile);
+                    Console.Write(" ");
                 }
                 Console.WriteLine();
             }
